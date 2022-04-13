@@ -1,14 +1,10 @@
-// change the css
-// add bulma
-// add a local storage eleent to save the searches.
-
-
-var userFormEl = document.querySelector('#user-form');
+var coderFormEl = document.querySelector('#coderForm');
 var languageButtonsEl = document.querySelector('#language-buttons');
 var nameInputEl = document.querySelector('#username');
 var repoContainerEl = document.querySelector('#repos-container');
 var repoSearchTerm = document.querySelector('#repo-search-term');
-var savedSearches = [];
+
+
 
 
 var formSubmitHandler = function (event) {
@@ -56,12 +52,60 @@ var getUserRepos = function (user) {
     });
 };
 
+// ________________________ local storage starts ________________________
 
-// key: todoList Value: this is a message
-let todoList = "this is an message";
-// localStorage.setItem("todoList", todoList);
-todoList = localStorage.getItem("todoList");
-console.log(todoList);
+var coderForm = document.getElementById("coderForm");
+var codersContainer = document.querySelector(".coders");
+
+var nameInputEl = coderForm["username"];
+var coders = JSON.parse(localStorage.getItem("coders")) || [];
+
+var addCoder = (name) => {
+  coders.push({
+    name
+  });
+
+  localStorage.setItem("coders", JSON.stringify(coders));
+
+  return { name };
+};
+
+var createCoderElement = ({ name }) => {
+  // Create elements
+  var coderDiv = document.createElement("div");
+  var coderName = document.createElement("h2");
+
+
+  // Fill the content
+  coderName.innerText =  name;
+
+
+  // Add to the DOM
+  coderDiv.append(coderName);
+  codersContainer.appendChild(coderDiv);
+
+  codersContainer.style.display = coders.length === 0 ? "none" : "flex";
+};
+
+codersContainer.style.display = coders.length === 0 ? "none" : "flex";
+
+coders.forEach(createCoderElement);
+
+coderForm.onsubmit = e => {
+  e.preventDefault();
+
+  var newCoder = addCoder(
+    nameInput.value,
+
+  );
+
+  createCoderElement(newCoder);
+
+  nameInput.value = "";
+
+};
+// ________________________ local storage ends ________________________
+
 
 
 
@@ -208,7 +252,7 @@ var displayRepos = function (repos, searchTerm) {
 // };
 
 
-userFormEl.addEventListener('submit', formSubmitHandler);
+coderFormEl.addEventListener('submit', formSubmitHandler);
 languageButtonsEl.addEventListener('click', buttonClickHandler);
 
 // loadSearchHistory();

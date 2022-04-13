@@ -3,24 +3,29 @@
 # Project Requirements
 
 The group project must meet the following requirements:
+# Technology used
 
-* Use Bulma to re-style the page.
+* Bulma was used to re-style the page.
+* Github API
+* Random Quote Generator API: 
 
+# Project Requirements
 
-* Be interactive (i.e., accept and respond to user input).
+* Use a Framework other than Bootstrap- I used BULMA.
+* Be interactive (i.e., accept and respond to user input) - This app accepts input from the user - takes in github username, allows the user to pick a language, and allows the user to interact with the Random Quote of the day, by having a link for you to tweet the quote of your choice.  
 
-* Add another API - 
+* Add another API - I used Random Quote Generator
 
-* Does not use alerts, confirms, or prompts (use modals).
+* Uses local storage to store persistent data.
 
-* Use client-side storage to store persistent data.
+* Is responsive- Bulma allows the website to be responsive to screensizes.
 
-* Be responsive.
-
-* Have a polished UI.
+* Have a polished UI- changed the look of the page. 
 
 * Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
 
-* Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
+* Have a quality README
 
-* Finally, you must add your project to the portfolio that you created in Module 2.
+* Project is deployed to Github pages at: 
+
+* Project is linked and 

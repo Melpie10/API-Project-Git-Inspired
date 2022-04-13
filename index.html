@@ -15,15 +15,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
 
-    <title>Git it Done</title>
+    <title>Git Inspired</title>
   </head>
 
 
     <section class="hero is-light">
       <div class="hero-body ">
-        <p class="title is-1 $title-color: ">
+        <h1 class="title is-1 has-text-link">
           <i class="fab fa-github"></i> Git Inspired!
-        </p>
+        </h1>
         <p class="subtitle-color ">
           Search for GitHub users to see a list of
         repositories and how many open issues they have! 
@@ -37,26 +37,27 @@
     <main class="flex-row justify-space-between">
       <div class="col-12 col-md-4">
         <div class="card">
-          <h3 class="card-header">GitHub -Search By User</h3>
-          <form id="user-form" class="card-body">
-            <label class="form-label" for="username">Username</label>
+          <h3 class="card-header  title has-text-link">GitHub -Search By User</h3>
+          <form id="coderForm" class="card-body">
+            <label class="form-label has-text-link" for="username">Username</label>
             <input
               name="username"
               id="username"
               type="text"
               autofocus="true"
-              class="input is-link"
+              class="form-input is-link"
               placeholder="username"
             />
             <button type="submit" class="button is-link is-light">Get User</button>
           </form>
+          <div class="coders"></div>
         </div>
 
 
 
 
         <div class="card">
-          <h3 class="card-header">Github- Search By Topic</h3>
+          <h1 class="card-header title has-text-link ">Github- Search By Topic</h1>
           <div id="language-buttons" class="card-body">
             <button data-language="javascript" class="button is-link is-outlined">JavaScript</button>
             <button data-language="html" class="button is-link is-outlined">HTML</button>
@@ -67,26 +68,24 @@
 
 
 
-
-
       <div class="col-12 col-md-8">
-        <h2 class="subtitle">
+        <h1 class="title has-text-link ">
           Showing Github Repositories for: <span id="repo-search-term"></span>
-        </h2>
+        </h1>
         <div id="repos-container" class="list-group"></div>
       </div>
     </main>
 
     <section>
-      <div class="container is widescreen"><i class="fa-solid fa-quote-left"></i>
+      <div class="container is widescreen has-text-link is-size-4"><i class="fa-solid fa-quote-left"></i>
       <h1 class="quote"></h1>
       <hr> 
       <p class="author"></p>
-      <div class="button">
-        <a class="twitter-share-button"
-        href="https://twitter.com/intent/tweet?text=Hello%20world">
+      <div class="button is-link is-light is-outlined is-responsive">
+        <a class="twitter-share-button "
+        href="https://twitter.com/intent/tweet?text=Hello%20world"><i class="fa-brands fa-twitter"></i>
       Tweet</a>
-    <button class="next">Next</button>
+    <!-- <button class="next">Next</button> -->
       </div>
     </div>
     </section>
@@ -99,11 +98,6 @@
       </div>
       </div> -->
 
-      <div class="container">
-        <input class="storage" type="text">
-        <p class="text">Past Searched Usernames</p>
-        <!-- <button class="button"></button> -->
-      </div>
 
 
   </main>
@@ -111,7 +105,7 @@
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        <strong>Git Inspired!</strong> by <a href="https://jgthms.com">Mel Pietrowski</a>. 
+        <strong>Git Inspired!</strong> by <a href="https://melpie10.github.io/mp-react-portfolio/">Mel Pietrowski</a>. 
         </a> Find the Github repository for this website at
        <a href="https://github.com/Melpie10/API-project1"> Melpie10</a>.
       </p>
