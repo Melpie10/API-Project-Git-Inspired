@@ -6,7 +6,6 @@ The group project must meet the following requirements:
 
 * Use Bulma to re-style the page.
 
-* Be deployed to GitHub Pages.
 
 * Be interactive (i.e., accept and respond to user input).
 

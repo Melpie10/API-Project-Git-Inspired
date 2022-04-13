@@ -1,10 +1,6 @@
-// add api key for gitlab
-// make a search bar for gitlab
 // change the css
 // add bulma
 // add a local storage eleent to save the searches.
-
-
 
 
 var userFormEl = document.querySelector('#user-form');
@@ -61,6 +57,11 @@ var getUserRepos = function (user) {
 };
 
 
+// key: todoList Value: this is a message
+let todoList = "this is an message";
+// localStorage.setItem("todoList", todoList);
+todoList = localStorage.getItem("todoList");
+console.log(todoList);
 
 
 
