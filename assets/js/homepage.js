@@ -57,7 +57,7 @@ var getUserRepos = function (user) {
 var coderForm = document.getElementById("coderForm");
 var codersContainer = document.querySelector(".coders");
 
-var nameInputEl = coderForm["username"];
+var nameInput = coderForm["username"];
 var coders = JSON.parse(localStorage.getItem("coders")) || [];
 
 var addCoder = (name) => {
