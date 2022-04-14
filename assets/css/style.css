@@ -564,4 +564,90 @@ p {
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
 
+main {
+  width: 80%;
+  margin: 15px auto 0;
+}
+
+#coderForm input[name="name"] {
+  grid-area: name;
+}
+
+#coderForm input[name="age"] {
+  grid-area: age;
+}
+
+#coderForm input[name="roll"] {
+  grid-area: roll;
+}
+
+#coderForm button {
+  grid-area: button;
+}
+
+#coderForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "name name"
+    "age roll"
+    "button button";
+}
+
+#coderForm * {
+  margin: 7px;
+  padding: 7px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+/* #coderForm button {
+  outline: none;
+  background-color: #6495ed;
+  color: white;
+  border: 5px solid transparent;
+  cursor: pointer;
+} */
+
+#coderForm input {
+  border: 3px solid #6495ed;
+  outline: none;
+}
+
+#coderForm input:focus {
+  border: 3px solid #367bfa;
+}
+
+#coderForm button:active {
+  border-color: #367bfa;
+}
+
+.coders {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid gray;
+  background-color: #ebebeb;
+  color: #2f2f2f;
+  border-radius: 15px;
+}
+
+.coders div {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.coders div * {
+  margin: 5px;
+}
